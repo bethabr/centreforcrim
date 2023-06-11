@@ -8,26 +8,20 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %} 
+{% include feature/jumbotron.html objectid="crimdata012" %}
 
-{% include feature/nav-menu.html sections="About CollectionBuilder CSV;About the About Page" %}
+{% include feature/nav-menu.html sections="About the Collection" %}
 
-## About CollectionBuilder CSV
+## About the Collection
+{% include feature/card.html header="Professor John Llewellyn Jones Edwards (1939-1994)" text="*Founding Director, Centre of Criminology (1963-1976)*" objectid="crimdata011" width="25" centered=true %}
+Meet Professor John LI. J. Edwards, a Welsh-born criminologist, whose passion for teaching and studying crime in Canadian society inspired the vision for the founding of The Centre for Criminology & Sociolegal Studies and the Centre Library. 
 
-This demo collection features items from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital/), and is build using [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv).
+Before arriving in Toronto, Professor Edwards was in the process of drafting up a memorandum on the creation of a criminology teaching school, one that could be studied outside the context of Canadian law schools, and yet, incorporate all forms of interdisciplinary backgrounds (Doob & Greenspan, 1985, 1). This would be the first of its kind in Canada, and Professor Edwards was eager to start one at his current institution, Dalhousie University (Doob & Greenspan, 1985, 1). The memorandum, written in 1959 was met with concerns that Dalhousie University would not be able to afford to create a new program (cite 2). While it may have seemed like all hope was lost, a different institution further out west saw the potential for a criminology institute. In 1960, the University of Toronto Law Journal published a copy of Professor Edwards’ memorandum (cite object), gaining the attention of Attorney General Mr. Kelso Roberts who convened a meeting on March 21, 1962 combining representatives from various Ontario universities, deans from the faculties of law, social work and medicine, as well as other legal representatives who would decide where an appropriate institution might be placed (cite p2).
 
-CollectionBuilder-CSV is a "Stand Alone" template for creating digital collection and exhibit websites using Jekyll, given:
+ Fortunately for UofT, the University was chosen as the ideal location for the first research and graduate teaching Criminology Institute in Canada. With that decision in mind, who better to appoint for the position of founding director than Professor John Ll. J Edwards? Sixty years later and under the leadership of eleven directors since its founding, the Centre for Criminology & Sociolegal Studies is now home to both an undergraduate and graduate program with over – (insert # of students), and houses an impressive library collection of over – (insert # of books). - a program that started with 30 masters students
 
-- a CSV of collection metadata
-- a folder of images, PDFs, audio, or video files
+These achievements would not have been possible without the work of the founding director, Professor John LI. J. Edwards who at the birth of the Centre of Criminology, engaged in lengthy appeal processes for the necessary funding that would kickstart the institute. 
 
-Driven by your collection metadata, the template generates engaging visualizations to browse and explore your objects.
-The resulting static site can be hosted on any basic web server.
+However, it would not go without saying that the Centre for Criminology & Sociolegal Studies’ success can also be credited to sixty-years worth of dedicated faculty, and students who made Professor Edwards’ vision possible. 
 
-[CollectionBuilder](https://github.com/CollectionBuilder/) is an set of open source tools for creating digital collection and exhibit websites that are driven by metadata and powered by modern static web technology.
-See [CB Docs](https://collectionbuilder.github.io/cb-docs/) for detailed information.
-
-{% include feature/image.html objectid="demo_001" width="75" %} 
-
-<!-- IMPORTANT!!! DELETE this comment and the include below when you are finished editing this page for your collection. The include below introduces about page features. They will show up on your collection's about page until you delete it.  -->
 {% include cb/about_the_about.md %} 
