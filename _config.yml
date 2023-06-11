@@ -1,18 +1,20 @@
 ##########
-# collectionbuilder-csv
-# Jekyll Digital Collection Generator
-# https://github.com/CollectionBuilder/collectionbuilder-csv
+# collectionbuilder-gh
+# Jekyll Digital Collection Generator, designed for GitHub Pages
+# https://github.com/CollectionBuilder/collectionbuilder-gh
 ##########
 
 ##########
-# URL VARIABLES
+# URL VARIABLES [optional if using GitHub Pages!]
 #
-# site domain, full URL to the production location of your collection
-url: 
-# path to location on the domain if necessary e.g. /digital/hjccc
-baseurl: 
+# url is site domain, full URL to the production location of your collection
+# on GitHub Pages follows the pattern username.github.io
+#url: https://collectionbuilder.github.io 
+# baseurl is path to location on the domain if necessary e.g. /digital/hjccc
+# on GitHub Pages it is your github repository's name prefixed with a /
+#baseurl: /collectionbuilder-gh 
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
+source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
 
 ##########
 # SITE SETTINGS
@@ -20,48 +22,40 @@ source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
 # title of site appears in banner
 title: Centre for Criminology and Sociolegal Studies Library 
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Archival Materials 1950-1990
+tagline: Archival Materials 1950-2023
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
 description: "This is a sampler exhibit of The Centre's newly archived and digitied materials spanning from 1950-2023"
-# keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: archive;library;criminology
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
 author: Elizabeth Abraham
 
 ##########
 # COLLECTION SETTINGS
 #
-# Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
+# Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: criminologycollectionbuilder 
-# page generation settings [optional!]
-# [optional: only used if you need to tweak CB defaults or generate from more than one data file]
-# page_gen:
-#   - data: 'demo-metadata'
-#     template: 'item'
-#     name: 'objectid'
-#     dir: 'items'
-#     extension: 'html' 
-#     filter: 'objectid'  
+metadata: criminologycollectionbuilder
 
 ##########
 # Site/Organization Branding 
-#   Enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
-#   To remove the branding, comment out these values, or delete them. 
+#   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #
-organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-organization-link: https://cdil.lib.uidaho.edu/
+organization-name: "Centre for Criminology and Sociolegal Studies (CrimSL) Library"
+# organization-link: https://cdil.lib.uidaho.edu/
 organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+
+
 
 ##########
 # GOOGLE SERVICES [optional!]
 #
-# leave these blank or comment out to NOT include google code
-# if present, used to add analytics during "production" build only
-# google-analytics-id: "UA-74844011-1"
-# google-cse-id: "002151703305773322890:1pu3smhw1t8"
+# leave these blank or comment out to NOT include google code. See docs/google.md
+#
+# Add your google-analytics-id to automatically add the embed code, e.g. "UA-76328753-1"
+# google-analytics-id:
+# to populate a Google CSE add the id, e.g. "002151703305773322890:1pu3smhw1t8"
+# google-cse-id: 
 
 ##########
 # ROBOTS EXCLUDE
@@ -77,7 +71,7 @@ organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
 # (this is done automatically by gh-pages build)
 #
 # ignore stuff
-exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md, SECURITY.md]
+exclude: [docs/, Rakefile, README.md, LICENSE]
 # compress CSS output
 sass:
   style: compressed
