@@ -41,9 +41,9 @@ metadata: criminologycollectionbuilder
 #   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #
 organization-name: "Centre for Criminology and Sociolegal Studies (CrimSL) Library"
-# organization-link: https://cdil.lib.uidaho.edu/
-organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+organization-link: https://crimsl.library.utoronto.ca/
+organization-logo-banner: https://bethabr.github.io/centreforcrim/assets/img/libackgroundcrimnew.png
+organization-logo-nav: https://bethabr.github.io/centreforcrim/assets/img/libackgroundcrimnew.png
 
 
 
